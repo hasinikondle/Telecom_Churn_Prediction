@@ -36,3 +36,10 @@ streamlit run app.py
 
 ```
 
+Live Application Link
+
+```
+
+https://telecomchurnprediction-xm5cpklqgaxdnqi67t8vzx.streamlit.app/
+
+```
