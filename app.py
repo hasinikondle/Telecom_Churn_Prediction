@@ -135,21 +135,17 @@ total
 
 # ------------------ PREDICTION ------------------ #
 
-col1,col2,col3 = st.columns([1,2,1])
+
+
+col1, col2 = st.columns([1,2])
 
 if col2.button("🔍 Predict Churn"):
-
+    
     prediction = model.predict(new_data)[0]
 
-    st.divider()
-
     if prediction == 1:
-        st.error("⚠️ Customer is likely to CHURN")
-        st.progress(0.85)
+        st.subheader("⚠️ Customer is likely to CHURN")
 
     else:
-        st.success("✅ Customer will STAY")
-        st.progress(0.15)
-
-    st.subheader("Prediction Result")
-    st.write("Model Used: **Support Vector Machine (SVM)**")
+        st.subheader("✅ Customer will STAY")
+        
