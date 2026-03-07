@@ -9,6 +9,10 @@ import pandas as pd
 
 with open("SVM_model.pkl","rb") as file:
     model = pickle.load(file)
+    
+    #encoded de-serialization(loading encoder)
+with open("encoder.pkl","rb") as file1:
+    enc = pickle.load(file1)
 
 # ------------------ PAGE SETTINGS ------------------ #
 
